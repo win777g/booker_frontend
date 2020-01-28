@@ -1,0 +1,26 @@
+<div class="title-block">
+    <h3 class="title">
+        Страница записей <span class="sparkline bar"></span>
+    </h3>
+</div>
+<section class="section text-center" *ngIf="!isLoaded">
+  <sv-loader></sv-loader>
+</section>
+<section class="section" *ngIf="isLoaded">
+    <div class="row">
+        <div class="col-md-6">
+           <sv-add-event  [categories]="categories"></sv-add-event>
+        </div>
+        <div class="col-md-6">
+           <sv-add-category (onCategoryAdd)="newCategoryAdded($event)"></sv-add-category>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+        <sv-edit-category
+         [categories]="categories"
+         (onCategoryEdit)="categoryWasEdited($event)"
+         ></sv-edit-category>
+        </div>
+    </div>
+</section>

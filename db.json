@@ -1,0 +1,89 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "email": "tek-shop@mail.ru",
+      "password": "111111",
+      "name": "Администратор"
+    },
+    {
+      "email": "win21g@mail.ru",
+      "password": "111111",
+      "name": "serg",
+      "id": 2
+    }
+  ],
+  "bill": {
+    "value": 18420,
+    "currency": "RUB"
+  },
+  "categories": [
+    {
+      "name": "Аренда жилья",
+      "capacity": 4500,
+      "id": 1
+    },
+    {
+      "name": "Еда",
+      "capacity": 3000,
+      "id": 2
+    },
+    {
+      "name": "Алименты",
+      "capacity": 2300,
+      "id": 3
+    },
+    {
+      "name": "Проезд",
+      "capacity": 380,
+      "id": 4
+    },
+    {
+      "name": "Зарплата",
+      "capacity": 25000,
+      "id": 5
+    }
+  ],
+  "events": [
+    {
+      "type": "outcome",
+      "amount": 4500,
+      "category": 1,
+      "date": "22.04.2019 17:07:48",
+      "description": "убытовня",
+      "id": 1
+    },
+    {
+      "type": "outcome",
+      "amount": 1500,
+      "category": 2,
+      "date": "22.04.2019 17:08:11",
+      "description": "еда",
+      "id": 2
+    },
+    {
+      "type": "outcome",
+      "amount": 2200,
+      "category": 3,
+      "date": "22.04.2019 17:08:45",
+      "description": "Алименты",
+      "id": 3
+    },
+    {
+      "type": "outcome",
+      "amount": 380,
+      "category": 4,
+      "date": "22.04.2019 17:09:33",
+      "description": "езденка",
+      "id": 4
+    },
+    {
+      "type": "income",
+      "amount": 15000,
+      "category": 5,
+      "date": "27.04.2019 12:29:19",
+      "description": "май",
+      "id": 5
+    }
+  ]
+}
